@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  app:
+    container_name: integration
+    build:
+      context: .
+      dockerfile: integration.Dockerfile
+    image: integration:1.0
+    ports:
+    - "8090:8080"
